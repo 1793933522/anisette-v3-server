@@ -1,5 +1,5 @@
 # Base for builder
-FROM debian:stable-slim AS builder
+FROM debian:stable-20250520-slim AS builder
 # Deps for builder
 RUN apt-get update && apt-get install --no-install-recommends -y ca-certificates ldc git clang dub libz-dev libssl-dev libplist-dev libplist-2.0-4 \
  && apt-get clean \
